@@ -24,11 +24,13 @@ public class TriangleTest {
 
     @Test
     public void testNotTriangle1() {
-        //TODO: add your test cases 
+        Triangle t = new Triangle(1, 2, 3);
+        assertEquals("Error: Not a triangle", t.getTriangleType());
     }
 
     @Test
     public void sidesShouldBePositive() {
-        //TODO: add your test cases 
+        Triangle t = new Triangle(-1, 2, 3);
+        assertEquals("Error: The length should be positive", t.getTriangleType());
     }
 }
